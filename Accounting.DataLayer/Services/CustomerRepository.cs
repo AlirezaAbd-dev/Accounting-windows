@@ -60,7 +60,7 @@ namespace Accounting.DataLayer {
             if( filter == "" ) {
                 return db
                     .Customers
-                    .Select(c => new ListCustomerViewModel() { FullName = c.FullName })
+                    .Select(c => new ListCustomerViewModel() { FullName = c.FullName, CustomerId= c.CustomerId })
                     .ToList();
             }
 

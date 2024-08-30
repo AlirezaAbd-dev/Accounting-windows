@@ -34,7 +34,9 @@ namespace Accounting.DataLayer {
 
 
         public virtual void Update(TEntity entity) {
-            _dbSet.Attach(entity);
+            //if( _db.Entry(entity).State == EntityState.Detached ) {
+            //    _dbSet.Attach(entity);
+            //}
             _db.Entry(entity).State = EntityState.Modified;
         }
 
