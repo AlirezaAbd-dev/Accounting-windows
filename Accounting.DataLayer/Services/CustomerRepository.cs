@@ -52,6 +52,10 @@ namespace Accounting.DataLayer {
             return db.Customers.First(c => c.FullName == name).CustomerId;
         }
 
+        public string GetCustomerNameById(int id) {
+            return db.Customers.Find(id).FullName;
+        }
+
         public List<ListCustomerViewModel> GetNameCustomers(string filter = "") {
             if( filter == "" ) {
                 return db

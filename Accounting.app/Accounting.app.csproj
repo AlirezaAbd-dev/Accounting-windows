@@ -64,17 +64,23 @@
     <Compile Include="Customers\frmCustomers.Designer.cs">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddOrEditCustomer.cs">
+    <Compile Include="Customers\frmAddOrEditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddOrEditCustomer.Designer.cs">
+    <Compile Include="Customers\frmAddOrEditCustomer.Designer.cs">
       <DependentUpon>frmAddOrEditCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNewAccounting.cs">
+    <Compile Include="Accounting\frmNewAccounting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewAccounting.Designer.cs">
+    <Compile Include="Accounting\frmNewAccounting.Designer.cs">
       <DependentUpon>frmNewAccounting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,16 +114,19 @@
     <Compile Include="Validator\RequiredFieldValidator.designer.cs">
       <DependentUpon>RequiredFieldValidator.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Accounting\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customers\frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddOrEditCustomer.resx">
+    <EmbeddedResource Include="Customers\frmAddOrEditCustomer.resx">
       <DependentUpon>frmAddOrEditCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewAccounting.resx">
+    <EmbeddedResource Include="Accounting\frmNewAccounting.resx">
       <DependentUpon>frmNewAccounting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

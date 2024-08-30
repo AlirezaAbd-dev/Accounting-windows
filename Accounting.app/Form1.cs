@@ -27,5 +27,17 @@ namespace Accounting.app
             frmNewAccounting frmNewAccounting = new frmNewAccounting(); 
             frmNewAccounting.ShowDialog();
         }
+
+        private void btnReportPay_Click(object sender, EventArgs e) {
+            frmReport frmReport = new frmReport();
+            frmReport.TypeId = 2;
+            frmReport.ShowDialog();
+        }
+
+        private void btnReportRecieve_Click(object sender, EventArgs e) {
+            frmReport frmReport = new frmReport();
+            frmReport.TypeId = 1;
+            frmReport.ShowDialog();
+        }
     }
 }

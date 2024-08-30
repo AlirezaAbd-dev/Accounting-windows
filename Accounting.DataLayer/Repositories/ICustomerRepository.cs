@@ -16,5 +16,6 @@ namespace Accounting.DataLayer {
         bool DeleteCustomer(Customers customer);
         bool DeleteCustomer(int id);
         int GetCustomerIdByName(string name);
+        string GetCustomerNameById(int id);
     }
 }
